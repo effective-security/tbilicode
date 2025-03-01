@@ -3,14 +3,15 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #333;
-    background-color: #272525;
+    color: #000000;
+    background-color: #171717;
+    font-family: "Roboto Mono", Courier, monospace, "Inter", sans-serif;
 }
 
 header {
     text-align: center;
     padding: 40px 0;
-    background: #f9d2d2;
+    background: #f6f4f4;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -87,16 +88,26 @@ h2 {
 }
 
 footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     text-align: center;
     padding: 40px 20px;
     background: #fd0303;
     margin-top: 40px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    color: #ededed;
+    font-size: smaller;
+}
+
+.footer-item {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
 }
 
 footer a {
-    color: #ffffff;
-    
+    color: #d9cccc;
     text-decoration: none;
 }
 
@@ -115,5 +126,9 @@ footer a:hover {
 
     .service-image, .service-content {
         text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
     }
 }
